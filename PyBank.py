@@ -22,7 +22,7 @@ with open(pybank_csv_path,newline="") as csvfile:
         #Calculate the total revenue over the entire period
         total_revenue += int(row['Revenue'])
 
-        #Calulate the average change in revue between months over the entire period
+        #Calulate the average change in revenue between months over the entire period
         rev_change = int(row["Revenue"])- prev_revenue
         prev_revenue = int(row["Revenue"])
         revenue_change_list = revenue_change_list + [rev_change]
